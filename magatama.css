@@ -51,6 +51,7 @@ body {
 }
 .info-row .magatama-info {
     display: none;
+    border: 1px solid transparent;
 }
 .info-row .magatama-info .info-box {
     width: 35%;
