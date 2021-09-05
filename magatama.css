@@ -103,6 +103,7 @@ body {
     float: right;
     width: 60%;
     height: 250px;
+    margin-top: 30px;
 }
 #shopping_list .list-header {
     width: 100%;
