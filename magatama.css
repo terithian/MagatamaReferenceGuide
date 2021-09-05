@@ -44,6 +44,7 @@ body {
     font-size: 20px;
     text-align: center;
 }
+.magatama-row .magatama-entry.active .name,
 .magatama-row .magatama-entry:hover .name {
     text-shadow: 0 0 10px #fff;
 }
