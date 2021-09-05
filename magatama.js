@@ -24,4 +24,25 @@ $(document).ready(function() {
             }
         }
     });
+    
+    var current_shopping_items = 0;
+    $('.info-row .magatama-info .info-box table tr:not(:first-child)').on('click', function() {
+        if ( current_shopping_items < 8 ) {
+            var name = $(this).find('td:first-child').text();
+            var maga_name = $(this).closest('.magatama-info').attr('data-maga_name');
+            var method = $(this).find('td:last-child').text();
+            
+            $('#shopping_list .prototype').clone().removeClass('prototype')
+                .find('.name').text(name).end()
+                .find('.maga-name').text(maga_name).end()
+                .find('.method').text(method).end()
+                .find('.remove-button').on('click', function() {
+                    $(this).closest('tr').remove();
+                    current_shopping_items--;
+                }).end()
+                .appendTo('#shopping_list table');
+            
+            current_shopping_items++;
+        }
+    });
 });

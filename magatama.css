@@ -44,6 +44,7 @@ body {
     font-size: 20px;
     text-align: center;
 }
+#shopping_list .remove-button:hover,
 .magatama-row .magatama-entry.active .name,
 .magatama-row .magatama-entry:hover .name {
     text-shadow: 0 0 10px #fff;
@@ -72,25 +73,57 @@ body {
 .info-row .magatama-info .info-box .data-name {
     width: 25%
 }
+#shopping_list table,
 .info-row .magatama-info .info-box table {
     width: 100%;
     text-align: left;
     border-collapse: collapse;
 }
+#shopping_list table th,
 .info-row .magatama-info .info-box table th {
     border-bottom: 2px solid rgba(255,255,255,0.5);
 }
+#shopping_list table th:first-child,
 .info-row .magatama-info .info-box table th:first-child {
     width: 30%;
 }
+#shopping_list table td,
 .info-row .magatama-info .info-box table td {
     border-bottom: 2px solid rgba(255,255,255,0.1);
 }
+#shopping_list table tr:last-child td,
 .info-row .magatama-info .info-box table tr:last-child td {
     border: 0;
 }
-
-
+.info-row .magatama-info .info-box table tr:not(:first-child):hover {
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.1);
+}
+#shopping_list {
+    float: right;
+    width: 60%;
+    height: 250px;
+}
+#shopping_list .list-header {
+    width: 100%;
+    font-size: 25px;
+    text-decoration: underline;
+}
+#shopping_list table {
+    width: 100%;
+}
+#shopping_list .remove-button {
+    color: #f0c2ab;
+    -webkit-text-stroke-color: #5c221d;
+    font-size: 20px;
+    cursor: pointer;
+}
+#shopping_list table th:last-child {
+    width: 80px;
+}
+.prototype {
+    display: none;
+}
 
 
 
